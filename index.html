@@ -8,10 +8,32 @@
 
   </header>
   <main>
-    
+    <form action="index.html" method="post">
+      <h1>Submit League Feedback</h1>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="guestName"><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="guestEmail"><br>
+
+      <label for="phone">Telephone:</label><br>
+      <input type="tel" id="phone" name="guestPhone"><br>
+
+      <label>Tournaments Attended:</label><br>
+      <input type="checkbox" id="sept" name="sept"><label for="sept">September</label>
+      <input type="checkbox" id="oct" name="oct"><label for="oct">October</label>
+      <input type="checkbox" id="dec" name="dec"><label for="dec">December</label>
+      <input type="checkbox" id="jan" name="jan"><label for="jan">January</label>
+      <input type="checkbox" id="feb" name="feb"><label for="feb">February</label>
+      <input type="checkbox" id="apr" name="mar"><label for="apr">April</label>
+    </form>
   </main>
 </body>
 
 <!--
+  Goals of Form:
+    Set number of questions per tournament.
+    Pop up each set based on how many tournaments attended.
+    Submit results via email.
   Questions for class:
 -->
