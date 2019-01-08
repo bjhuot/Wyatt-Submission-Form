@@ -16,29 +16,58 @@
       <label for="email">Email Address:</label><br>
       <input type="email" id="email" name="guestEmail"><br>
 
-      <label for="phone">Telephone:</label><br>
-      <input type="tel" id="phone" name="guestPhone"><br>
+      <label>Student or Teacher:</label><br>
+      <input type="radio" id="student" name="student" value="student"><label for="student">Student</label><br>
+      <input type="radio" id="teacher" name="teacher" value="teacher"><label for="teacher">Teacher</label><br>
 
-      <label>Tournaments Attended:</label><br>
-      <input type="checkbox" id="sept" name="sept"><label for="sept">September</label>
-      <input type="checkbox" id="oct" name="oct"><label for="oct">October</label>
-      <input type="checkbox" id="dec" name="dec"><label for="dec">December</label>
-      <input type="checkbox" id="jan" name="jan"><label for="jan">January</label>
-      <input type="checkbox" id="feb" name="feb"><label for="feb">February</label>
-      <input type="checkbox" id="apr" name="mar"><label for="apr">April</label>
+      <label>Tournament Attended:</label><br>
+      <input type="radio" id="sept" name="sept" value="sept"><label for="sept">September</label>
+      <input type="radio" id="oct" name="oct" value="oct"><label for="oct">October</label>
+      <input type="radio" id="dec" name="dec" value="dec"><label for="dec">December</label>
+      <input type="radio" id="jan" name="jan" value="jan"><label for="jan">January</label>
+      <input type="radio" id="feb" name="feb" value="feb"><label for="feb">February</label>
+      <input type="radio" id="apr" name="apr" value="mar"><label for="apr">April</label>
     </form>
 
     <form class="perTournament" action="index.html" method="post">
       <label for="feedback">General Comments:</label><br>
-      <input type="Feedback" id="feedback" name="guestFeedback"><br>
+      <input type="comment" id="feedback" name="guestFeedback"><br>
+
+      <label>Beverages Consumed:</label><br>
+      <input type="checkbox" id="cocaCola" name="cocaCola"><label for="cocaCola">Coca Cola</label><br>
+      <input type="checkbox" id="dietCoke" name="dietCoke"><label for="dietCoke">Diet Coke</label><br>
+      <input type="checkbox" id="sprite" name="sprite"><label for="sprite">Sprite</label><br>
+      <input type="checkbox" id="dietSprite" name="dietSprite"><label for="dietSprite">Diet Sprite</label><br>
+      <input type="checkbox" id="drPepper" name="drPepper"><label for="drPepper">Dr. Pepper</label><br>
+      <input type="checkbox" id="dietDrPepper" name="dietDrPepper"><label for="dietDrPepper">Diet Dr. Pepper</label><br>
+      <input type="checkbox" id="mtnDew" name="mtnDew"><label for="mtnDew">Mountain Dew</label><br>
+      <input type="checkbox" id="dietMtnDew" name="dietMtnDew"><label for="dietMtnDew">Diet Mountain Dew</label><br>
+      <input type="checkbox" id="water" name="water"><label for="water">Water</label><br>
+      <input type="checkbox" id="coffee" name="coffee"><label for="coffee">Coffee</label><br>
+
+      <label for="slices">Slices of Pizza Eaten:</label><br>
+      <select name="slices" id="slices">
+        <option value="one">1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+        <option value="fourPlus">4+</option>
+      </select>
+
+      <label for="breakfast">Breakfast Foods Eaten:</label>
+      <input type="checkbox" id="granolaBar" name="granolaBar"><label for="granolaBar">Granola Bars</label>
+      <input type="checkbox" id="popTarts" name="popTarts"><label for="popTarts">Pop Tarts</label>
+      <input type="checkbox" id="glutenFree" name="glutenFree"><label for="glutenFree">Gluten Free Option</label>
+      <input type="checkbox" id="nutFree" name="nutFree"><label for="nutFree">Nut Free Option</label>
+      <!-- Fruit, etc? -->
     </form>
   </main>
 </body>
 
 <!--
   Goals of Form:
-    Set number of questions per tournament.
-    Pop up each set based on how many tournaments attended.
     Submit results via email.
+    Eventually:
+      modify to iterate second form based on how many tournaments selected
+      return titles for each iteration based on option selected
   Questions for class:
 -->
