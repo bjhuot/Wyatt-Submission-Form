@@ -14,26 +14,30 @@
       <input type="text" id="name" name="guestName"><br>
 
       <label for="email">Email Address:</label><br>
-      <input type="email" id="email" name="guestEmail"><br>
+      <input type="email" id="email" name="email"><br>
 
       <label>Student or Teacher:</label><br>
-      <input type="radio" id="student" name="student" value="student"><label for="student">Student</label><br>
-      <input type="radio" id="teacher" name="teacher" value="teacher"><label for="teacher">Teacher</label><br>
+      <input type="radio" id="student" name="respondent" value="student"><label for="student">Student</label><br>
+      <input type="radio" id="teacher" name="respondent" value="teacher"><label for="teacher">Teacher</label><br>
 
       <label>Tournament Attended:</label><br>
-      <input type="radio" id="sept" name="sept" value="sept"><label for="sept">September</label>
-      <input type="radio" id="oct" name="oct" value="oct"><label for="oct">October</label>
-      <input type="radio" id="dec" name="dec" value="dec"><label for="dec">December</label>
-      <input type="radio" id="jan" name="jan" value="jan"><label for="jan">January</label>
-      <input type="radio" id="feb" name="feb" value="feb"><label for="feb">February</label>
-      <input type="radio" id="apr" name="apr" value="mar"><label for="apr">April</label>
+      <input type="checkbox" id="sept" name="month" value="sept"><label for="sept">September</label>
+      <input type="checkbox" id="oct" name="month" value="oct"><label for="oct">October</label>
+      <input type="checkbox" id="dec" name="month" value="dec"><label for="dec">December</label>
+      <input type="checkbox" id="jan" name="month" value="jan"><label for="jan">January</label>
+      <input type="checkbox" id="feb" name="month" value="feb"><label for="feb">February</label>
+      <input type="checkbox" id="apr" name="month" value="mar"><label for="apr">April</label><br>
+      <input type="button" id="form_one" name="submit" value="Submit" onclick="printMonth()">
     </form>
 
-    <div class="output">
+    <form class="perTournament" action="index.html" method="post">
+      <div id="output">
 
-    </div>
+      </div>
+    </form>
 
   </main>
+  <script type="text/javascript" src="scripts.js"></script>
 </body>
 
 <!--
