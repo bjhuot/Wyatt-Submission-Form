@@ -30,9 +30,33 @@ printForm +='<input type="checkbox" id="glutenFree" name="glutenFree"><label for
 printForm +='<input type="checkbox" id="nutFree" name="nutFree"><label for="nutFree">Nut Free Option</label><br>'
 
 
+// function printMonth() {
+//   var sept = document.getElementById("sept").checked;
+//   if (sept == true) {
+//     print(printForm);
+//   }
+// }
+
 function printMonth() {
-  var sept = document.getElementById("sept").checked;
-  if (sept == true) {
-    print(printForm);
+  var calendar = [
+    ['sept', 'September'],
+    ['oct', 'October'],
+    ['dec', 'December'],
+    ['jan', 'January'],
+    ['feb', 'February'],
+    ['apr', 'April']
+  ];
+  
+  var calLen = calendar.length;
+  var outputSurvey = '';
+
+  for (i = 0; i < calLen; i+=1) {
+    var monthCal = calendar[i][0];
+    var monthName = calendar[i][1];
+    monthCal = document.getElementById(monthCal).checked;
+    if (monthCal == true) { 
+      outputSurvey = outputSurvey + '<h3>' + monthName + '</h3>' + printForm;
+      print(outputSurvey);
+    }
   }
 }
