@@ -3,32 +3,38 @@
   <title>Demonstration of Forms</title>
 </head>
 <body>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
   <header>
 
   </header>
   <main>
+    <!-- First form filled out by respondants -->
     <form class="constant" action="index.html" method="post">
       <h1>Submit League Feedback</h1>
       <label for="name">Name:</label><br>
-      <input type="text" id="name" name="guestName"><br>
+      <input type="text" id="name" name="guestName" size="50"><br>
 
       <label for="email">Email Address:</label><br>
       <input type="email" id="email" name="email"><br>
 
       <label>Student or Teacher:</label><br>
-      <input type="radio" id="student" name="respondent" value="student"><label for="student">Student</label><br>
-      <input type="radio" id="teacher" name="respondent" value="teacher"><label for="teacher">Teacher</label><br>
+      <div class="checkbox">
+        <input type="radio" id="student" name="respondent" value="student"><label for="student">Student</label><br>
+        <input type="radio" id="teacher" name="respondent" value="teacher"><label for="teacher">Teacher</label><br>
+      </div>
 
       <label>Tournament Attended:</label><br>
-      <input type="checkbox" id="sept" name="month" value="sept"><label for="sept">September</label>
-      <input type="checkbox" id="oct" name="month" value="oct"><label for="oct">October</label>
-      <input type="checkbox" id="dec" name="month" value="dec"><label for="dec">December</label>
-      <input type="checkbox" id="jan" name="month" value="jan"><label for="jan">January</label>
-      <input type="checkbox" id="feb" name="month" value="feb"><label for="feb">February</label>
-      <input type="checkbox" id="apr" name="month" value="mar"><label for="apr">April</label><br>
-      <input type="button" id="form_one" name="submit" value="Submit" onclick="printMonth()">
-    </form>
+      <div class="checkbox">
+        <input type="checkbox" id="sept" name="month" value="sept"><label for="sept">September</label>
+        <input type="checkbox" id="oct" name="month" value="oct"><label for="oct">October</label>
+        <input type="checkbox" id="dec" name="month" value="dec"><label for="dec">December</label>
+        <input type="checkbox" id="jan" name="month" value="jan"><label for="jan">January</label>
+        <input type="checkbox" id="feb" name="month" value="feb"><label for="feb">February</label>
+        <input type="checkbox" id="apr" name="month" value="mar"><label for="apr">April</label><br>
+        <input type="button" id="form_one" name="submit" value="Submit" onclick="printMonth()">
+      </div>
+      </form>
 
     <form class="perTournament" action="index.html" method="post">
       <div id="output">
@@ -43,8 +49,5 @@
 <!--
   Goals of Form:
     Submit results via email.
-    Eventually:
-      modify to iterate second form based on how many tournaments selected
-      return titles for each iteration based on option selected
   Questions for class:
 -->

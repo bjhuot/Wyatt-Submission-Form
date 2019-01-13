@@ -3,6 +3,7 @@ function print(printForm) {
     outputDiv.innerHTML = printForm;
 }
 
+//Secondary form that iterates for each selected month
 printForm ='<label for="feedback">General Comments:</label><br>'
 printForm +='<input type="comment" id="feedback" name="guestFeedback"><br>'
 printForm +='<label>Beverages Consumed:</label><br>'
@@ -29,14 +30,9 @@ printForm +='<input type="checkbox" id="popTarts" name="popTarts"><label for="po
 printForm +='<input type="checkbox" id="glutenFree" name="glutenFree"><label for="glutenFree">Gluten Free Option</label><br>'
 printForm +='<input type="checkbox" id="nutFree" name="nutFree"><label for="nutFree">Nut Free Option</label><br>'
 
-
-// function printMonth() {
-//   var sept = document.getElementById("sept").checked;
-//   if (sept == true) {
-//     print(printForm);
-//   }
-// }
-
+//Function that looks at each checkbox input to see if it has been checked,
+// then prints a copy of the above printForm labeled with the appropriate
+// month.
 function printMonth() {
   var calendar = [
     ['sept', 'September'],

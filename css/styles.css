@@ -1,0 +1,26 @@
+/**
+ * Main Elements
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+
+ /**
+ * Class/ID Selectors
+ */
+
+    body {
+        background-color: rgb(246, 246, 255);
+        color: rgb(33,33,33);
+     }
+
+    h1  {
+        font-family: sans-serif;
+    }
+
+
+ /**
+ * Media Queries
+ */
