@@ -4,9 +4,9 @@ function print(printForm) {
 }
 
 //Secondary form that iterates for each selected month
-printForm ='<label for="feedback">General Comments:</label><br>'
-printForm +='<input type="comment" id="feedback" name="guestFeedback"><br>'
-printForm +='<label>Beverages Consumed:</label><br>'
+printForm ='<label class="title" for="feedback">General Comments:</label><br>'
+printForm +='<textarea type="text" id="feedback" name="guestFeedback" form="form_two"></textarea><br>'
+printForm +='<label class="title">Beverages Consumed:</label><br>'
 printForm +='<input type="checkbox" id="cocaCola" name="cocaCola"><label for="cocaCola">Coca Cola</label><br>'
 printForm +='<input type="checkbox" id="dietCoke" name="dietCoke"><label for="dietCoke">Diet Coke</label><br>'
 printForm +='<input type="checkbox" id="sprite" name="sprite"><label for="sprite">Sprite</label><br>'
@@ -17,14 +17,14 @@ printForm +='<input type="checkbox" id="mtnDew" name="mtnDew"><label for="mtnDew
 printForm +='<input type="checkbox" id="dietMtnDew" name="dietMtnDew"><label for="dietMtnDew">Diet Mountain Dew</label><br>'
 printForm +='<input type="checkbox" id="water" name="water"><label for="water">Water</label><br>'
 printForm +='<input type="checkbox" id="coffee" name="coffee"><label for="coffee">Coffee</label><br>'
-printForm +='<label for="slices">Slices of Pizza Eaten:</label><br>'
+printForm +='<label class="title" for="slices">Slices of Pizza Eaten:</label><br>'
 printForm +='<select name="slices" id="slices">'
 printForm +='<option value="one">1</option>'
 printForm +='<option value="two">2</option>'
 printForm +='<option value="three">3</option>'
 printForm +='<option value="fourPlus">4+</option>'
 printForm +='</select><br>'
-printForm +='<label for="breakfast">Breakfast Foods Eaten:</label><br>'
+printForm +='<label class="title" for="breakfast">Breakfast Foods Eaten:</label><br>'
 printForm +='<input type="checkbox" id="granolaBar" name="granolaBar"><label for="granolaBar">Granola Bars</label><br>'
 printForm +='<input type="checkbox" id="popTarts" name="popTarts"><label for="popTarts">Pop Tarts</label><br>'
 printForm +='<input type="checkbox" id="glutenFree" name="glutenFree"><label for="glutenFree">Gluten Free Option</label><br>'
@@ -51,7 +51,7 @@ function printMonth() {
     var monthName = calendar[i][1];
     monthCal = document.getElementById(monthCal).checked;
     if (monthCal == true) { 
-      outputSurvey = outputSurvey + '<h3>' + monthName + '</h3>' + printForm;
+      outputSurvey = outputSurvey + '<div class="content"><h3>' + monthName + '</h3>' + printForm + '</div>';
       print(outputSurvey);
     }
   }

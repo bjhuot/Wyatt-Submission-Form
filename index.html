@@ -9,39 +9,43 @@
 
   </header>
   <main>
-    <!-- First form filled out by respondants -->
-    <form class="constant" action="index.html" method="post">
-      <h1>Submit League Feedback</h1>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="guestName" size="50"><br>
+    <div class="content">
+      <!-- First form filled out by respondants -->
+      <form class="constant" action="index.html" method="post">
+        <h1>Submit League Feedback</h1>
+        <label class="title" for="name">Name:</label><br>
+        <input type="text" id="name" name="guestName" size="30"><br>
 
-      <label for="email">Email Address:</label><br>
-      <input type="email" id="email" name="email"><br>
+        <label class="title" for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" size="30"><br>
 
-      <label>Student or Teacher:</label><br>
-      <div class="checkbox">
-        <input type="radio" id="student" name="respondent" value="student"><label for="student">Student</label><br>
-        <input type="radio" id="teacher" name="respondent" value="teacher"><label for="teacher">Teacher</label><br>
-      </div>
+        <label class="title">Student or Teacher:</label><br>
+        <div class="checkbox">
+          <input type="radio" id="student" name="respondent" value="student"><label for="student">Student</label><br>
+          <input type="radio" id="teacher" name="respondent" value="teacher"><label for="teacher">Teacher</label><br>
+        </div>
 
-      <label>Tournament Attended:</label><br>
-      <div class="checkbox">
-        <input type="checkbox" id="sept" name="month" value="sept"><label for="sept">September</label>
-        <input type="checkbox" id="oct" name="month" value="oct"><label for="oct">October</label>
-        <input type="checkbox" id="dec" name="month" value="dec"><label for="dec">December</label>
-        <input type="checkbox" id="jan" name="month" value="jan"><label for="jan">January</label>
-        <input type="checkbox" id="feb" name="month" value="feb"><label for="feb">February</label>
-        <input type="checkbox" id="apr" name="month" value="mar"><label for="apr">April</label><br>
-        <input type="button" id="form_one" name="submit" value="Submit" onclick="printMonth()">
-      </div>
+        <label class="title">Tournament Attended:</label><br>
+        <div class="checkbox">
+          <ul>
+            <li><input type="checkbox" id="sept" name="month" value="sept"><label for="sept">September</label></li>
+            <li><input type="checkbox" id="oct" name="month" value="oct"><label for="oct">October</label></li>
+            <li><input type="checkbox" id="dec" name="month" value="dec"><label for="dec">December</label></li>
+            <li><input type="checkbox" id="jan" name="month" value="jan"><label for="jan">January</label></li>
+            <li><input type="checkbox" id="feb" name="month" value="feb"><label for="feb">February</label></li>
+            <li><input type="checkbox" id="apr" name="month" value="mar"><label for="apr">April</label></li><br>
+            <li><input type="button" id="form_one" name="submit" value="Submit" onclick="printMonth()">
+          </ul>
+        </div>
       </form>
+    </div>
+    
+      <form class="perTournament" id="form_two" action="index.html" method="post">
+        <div id="output">
 
-    <form class="perTournament" action="index.html" method="post">
-      <div id="output">
-
-      </div>
-    </form>
-
+        </div>
+      </form>
+    
   </main>
   <script type="text/javascript" src="scripts.js"></script>
 </body>

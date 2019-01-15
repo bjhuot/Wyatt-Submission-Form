@@ -4,22 +4,68 @@
 
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
+body {
+    color: rgb(33,33,33);
+    margin: 0 auto;
+ }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+h1  {
+ 
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+label {
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+textarea {
+    width: 30ch;
+    height: 6em;
+}
 
  /**
  * Class/ID Selectors
  */
 
-    body {
-        background-color: rgb(246, 246, 255);
-        color: rgb(33,33,33);
-     }
+.content {
+    background-color: #dadada;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-    h1  {
-        font-family: sans-serif;
-    }
+.title {
+    font-size: 1.25em;
+}
 
+#form_one {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: rgb(83, 218, 179);
+    color: #333;
+}
+
+#form_one:hover {
+    background-color: rgba(70, 206, 167, 0.75);
+}
 
  /**
  * Media Queries
