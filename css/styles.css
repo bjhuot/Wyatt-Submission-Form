@@ -49,7 +49,7 @@ textarea {
     font-size: 1.25em;
 }
 
-#form_one {
+.btn {
     display: block;
     width: 50%;
     margin: 0 auto;
@@ -69,19 +69,26 @@ textarea {
  * Media Queries
  */
 
- @media (min-width: 800px) {
+ @media all and (min-width: 800px) {
     
     .content {
         max-width: 50%;
     }
 
-    .output {
-        display: inline-flex;
+    #output {
+        display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
     .monthly {
-        max-width: 40%;
+        width: 45%;
+    }
+
+    .btn {
+        align-self: flex-end;
     }
  }
+
