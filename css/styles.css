@@ -17,10 +17,6 @@ ul {
     padding-left: 0;
 }
 
-h1  {
- 
-}
-
 input {
     margin-bottom: 10px;
 }
@@ -58,9 +54,11 @@ textarea {
     width: 50%;
     margin: 0 auto;
     padding: 10px 0;
+    border: none;
     border-radius: 5px;
     background-color: rgb(83, 218, 179);
     color: #333;
+    font-weight: bold;
 }
 
 #form_one:hover {
@@ -70,3 +68,20 @@ textarea {
  /**
  * Media Queries
  */
+
+ @media (min-width: 800px) {
+    
+    .content {
+        max-width: 50%;
+    }
+
+    .output {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .monthly {
+        max-width: 40%;
+    }
+ }

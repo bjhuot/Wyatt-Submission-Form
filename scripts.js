@@ -51,7 +51,7 @@ function printMonth() {
     var monthName = calendar[i][1];
     monthCal = document.getElementById(monthCal).checked;
     if (monthCal == true) { 
-      outputSurvey = outputSurvey + '<div class="content"><h3>' + monthName + '</h3>' + printForm + '</div>';
+      outputSurvey = outputSurvey + '<div class="content monthly"><h3>' + monthName + '</h3>' + printForm + '</div>';
       print(outputSurvey);
     }
   }
