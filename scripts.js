@@ -52,7 +52,7 @@ function printMonth() {
     monthCal = document.getElementById(monthCal).checked;
     if (monthCal == true) { 
       outputSurvey = outputSurvey + '<div class="content monthly"><h3>' + monthName + '</h3>' + printForm + '</div>';
-      print(outputSurvey + '<input type="button" id="form_two" class="btn" name="submit" value="Submit">');
+      print(outputSurvey + '<div class="btndiv"><input type="button" id="form_two" class="btn" name="submit" value="Submit"></div>');
     }
   }
 }

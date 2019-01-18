@@ -27,7 +27,7 @@ label {
 }
 
 textarea {
-    width: 30ch;
+    width: 100%;
     height: 6em;
 }
 
@@ -52,7 +52,7 @@ textarea {
 .btn {
     display: block;
     width: 50%;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 10px 0;
     border: none;
     border-radius: 5px;
@@ -61,7 +61,7 @@ textarea {
     font-weight: bold;
 }
 
-#form_one:hover {
+.btn:hover {
     background-color: rgba(70, 206, 167, 0.75);
 }
 
@@ -69,10 +69,10 @@ textarea {
  * Media Queries
  */
 
- @media all and (min-width: 800px) {
+ @media all and (min-width: 600px) {
     
     .content {
-        max-width: 50%;
+        max-width: 70%;
     }
 
     #output {
@@ -85,10 +85,31 @@ textarea {
 
     .monthly {
         width: 45%;
+        margin: 10px;
     }
 
     .btn {
         align-self: flex-end;
     }
- }
+}
 
+@media all and (min-width: 800px) {
+    h1 {
+        display: block;
+    }
+    .content:not(.monthly) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 630px;
+    }
+
+    .monthly {
+        max-width: 370px;
+    }
+
+    .btndiv {
+        flex-basis: 100%;
+    }
+}
