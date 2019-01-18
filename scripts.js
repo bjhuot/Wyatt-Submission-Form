@@ -45,6 +45,7 @@ function printMonth() {
   
   var calLen = calendar.length;
   var outputSurvey = '';
+  var outputButton = '<div class="btndiv"><input type="button" id="form_two" class="btn" name="submit" value="Submit" onclick="alert(\'Form not yet functional.\')"></div>';
 
   for (i = 0; i < calLen; i+=1) {
     var monthCal = calendar[i][0];
@@ -52,7 +53,7 @@ function printMonth() {
     monthCal = document.getElementById(monthCal).checked;
     if (monthCal == true) { 
       outputSurvey = outputSurvey + '<div class="content monthly"><h3>' + monthName + '</h3>' + printForm + '</div>';
-      print(outputSurvey + '<div class="btndiv"><input type="button" id="form_two" class="btn" name="submit" value="Submit"></div>');
+      print(outputSurvey + outputButton);
     }
   }
 }

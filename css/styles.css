@@ -12,6 +12,10 @@ body {
     margin: 0 auto;
  }
 
+ h1 {
+     text-align: center;
+ }
+
 ul {
     list-style: none;
     padding-left: 0;
@@ -34,6 +38,33 @@ textarea {
  /**
  * Class/ID Selectors
  */
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color:  #53dab3;
+    font-weight: bold;
+    height: 6em;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 2em;
+    padding: 10px;
+}
+
+li {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
 
 .content {
     background-color: #dadada;
@@ -91,12 +122,13 @@ textarea {
     .btn {
         align-self: flex-end;
     }
+
+    .btndiv {
+        flex-basis: 100%;
+    }
 }
 
 @media all and (min-width: 800px) {
-    h1 {
-        display: block;
-    }
     .content:not(.monthly) {
         display: flex;
         flex-direction: row;
